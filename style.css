@@ -5,6 +5,13 @@
 * {
   font-family: Roboto,Arial, Helvetica, sans-serif
 }
+.profile-picture{
+  width: 45px;
+}
 svg {
   width: 2rem;
+}
+
+div {
+  border: solid black 1px;
 }
