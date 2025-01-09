@@ -2,6 +2,8 @@
   font-family: Roboto;
   src: url(Roboto-Regular.ttf);
 }
+
+/*   Basic styles just to get set up   */
 * {
   font-family: Roboto,Arial, Helvetica, sans-serif
 }
@@ -14,4 +16,31 @@ svg {
 
 div {
   border: solid black 1px;
+}
+
+/*  Layout  */
+.main-container {
+  display: grid;
+  grid-template: 1fr 4fr / 1fr 5fr;
+  gap: 10px;
+}
+.side-nav {
+  grid-row: 1 / -1;
+}
+.main-content {
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+}
+.projects {
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template: 80px repeat(3, 300px) / repeat(2, 1fr);
+  gap: 20px;
+}
+.projects > h1 {
+  grid-column: 1 / -1;
+}
+.card {
+  width: 400px;
+  height: 300px;
 }
